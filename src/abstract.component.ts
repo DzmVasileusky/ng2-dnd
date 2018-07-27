@@ -38,6 +38,10 @@ export abstract class AbstractComponent {
      */
     dropEnabled: boolean = false;
     /**
+     * Disable file drop
+     */
+    disableFileDrop: boolean = false;
+    /**
      * Drag effect
      */
     effectAllowed: string;
@@ -242,7 +246,7 @@ export abstract class AbstractComponent {
     }
 
     private _isDropAllowed(event: any): boolean {
-        if ((this._dragDropService.isDragged || (event.dataTransfer && event.dataTransfer.files)) && this.dropEnabled) {
+        if ((this._dragDropService.isDragged || (event.dataTransfer && (event.dataTransfer.files && !this.disableFileDrop))) && this.dropEnabled) {
             // First, if `allowDrop` is set, call it to determine whether the
             // dragged element can be dropped here.
             if (this.allowDrop) {

@@ -13,6 +13,8 @@ import {DragDropService, DragDropSortableService} from './dnd.service';
 @Directive({ selector: '[dnd-sortable-container]' })
 export class SortableContainer extends AbstractComponent {
 
+    @Input() disableFileDrop: boolean;
+
     @Input("dragEnabled") set draggable(value:boolean) {
         this.dragEnabled = !!value;
     }
