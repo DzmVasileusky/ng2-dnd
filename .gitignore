@@ -18,7 +18,6 @@ coverage
 *.metadata.json
 bundles
 .vscode
-dist
 
 #################
 ## JetBrains
