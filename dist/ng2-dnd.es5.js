@@ -985,6 +985,10 @@ var SortableComponent = /** @class */ (function (_super) {
     return SortableComponent;
 }(AbstractComponent));
 __decorate$5([
+    Input(),
+    __metadata$4("design:type", Boolean)
+], SortableComponent.prototype, "disableFileDrop", void 0);
+__decorate$5([
     Input('sortableIndex'),
     __metadata$4("design:type", Number)
 ], SortableComponent.prototype, "index", void 0);

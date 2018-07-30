@@ -989,6 +989,10 @@ exports.SortableComponent = /** @class */ (function (_super) {
     return SortableComponent;
 }(exports.AbstractComponent));
 __decorate$5([
+    core.Input(),
+    __metadata$4("design:type", Boolean)
+], exports.SortableComponent.prototype, "disableFileDrop", void 0);
+__decorate$5([
     core.Input('sortableIndex'),
     __metadata$4("design:type", Number)
 ], exports.SortableComponent.prototype, "index", void 0);

@@ -22,6 +22,7 @@ export declare class SortableContainer extends AbstractComponent {
 export declare class SortableComponent extends AbstractComponent {
     private _sortableContainer;
     private _sortableDataService;
+    disableFileDrop: boolean;
     index: number;
     draggable: boolean;
     droppable: boolean;
